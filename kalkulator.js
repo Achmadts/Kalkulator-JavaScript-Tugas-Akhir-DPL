@@ -19,13 +19,13 @@ calcInterface.question("Masukkan bilangan ke-1: ", (firstInput) => {
 		console.log("Masukkan Angka!");
 		return calcInterface.close();
 	}
-  
-  console.log('==================================');
 
-	console.log (" Masukkan " + " + " + " - " + " * " + " or " + " / ")
+	console.log('=============================================================');
+	console.log (" Masukkan: " + " Tambah (+) " + " Kurang (-) " + " Kali (*) " + " atau " + " Bagi (/) ")
+
 	calcInterface.question("Masukkan operator: ", (operatorInput) => {
 		if(!validOperators.includes(operatorInput)) {
 			console.log("Operator salah");
 			return calcInterface.close();
 		}
-	console.log('==================================');
+	console.log('=============================================================');
