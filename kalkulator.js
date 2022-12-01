@@ -19,16 +19,15 @@ calcInterface.question("Masukkan bilangan ke-1: ", (firstInput) => {
 		console.log("Masukkan Angka!");
 		return calcInterface.close();
 	}
-
-	console.log('=============================================================');
-	console.log (" Masukkan: " + " Tambah (+) " + " Kurang (-) " + " Kali (*) " + " atau " + " Bagi (/) ")
+	console.log('=======================================================================');
+	console.log (" Masukkan salah satu: " + " Tambah (+) " + " Kurang (-) " + " Kali (*) " + " atau " + " Bagi (/) ")
 
 	calcInterface.question("Masukkan operator: ", (operatorInput) => {
 		if(!validOperators.includes(operatorInput)) {
 			console.log("Operator salah");
 			return calcInterface.close();
 		}
-	console.log('=============================================================');
+	console.log('=======================================================================');
 
 			calcInterface.question("Masukkan bilangan ke-2: ", (secondInput) => {
 			const secondNumber = Number(secondInput);
@@ -37,8 +36,7 @@ calcInterface.question("Masukkan bilangan ke-1: ", (firstInput) => {
 				console.log("Masukkan Angka!");
 				return calcInterface.close();
 			}
-
-	console.log('=============================================================');
+	console.log('=======================================================================');
 
 			const result = calculatorLogic(firstNumber, operatorInput, secondNumber);
 
