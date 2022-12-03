@@ -20,7 +20,7 @@ calcInterface.question("Masukkan bilangan ke-1: ", (firstInput) => {
 		return calcInterface.close();
 	}
 	console.log('=======================================================================');
-	console.log (" Masukkan salah satu: " + " Tambah (+) " + " Kurang (-) " + " Kali (*) " + " atau " + " Bagi (/) ")
+	console.log ("Masukkan salah satu: " + " Tambah (+) " + " Kurang (-) " + " Kali (*) " + " atau " + " Bagi (/) ")
 
 	calcInterface.question("Masukkan operator: ", (operatorInput) => {
 		if(!validOperators.includes(operatorInput)) {
