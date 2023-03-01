@@ -37,7 +37,10 @@ calcInterface.question("Masukkan bilangan ke-1: ", (firstInput) => {
 				return calcInterface.close();
 			}
 	console.log('=======================================================================');
-
+		if (operatorInput === "/" && secondNumber === 0) {
+			console.log("Tidak dapat dibagi dengan nol (error)!");
+			return calcInterface.close();
+		}
 			const result = calculatorLogic(firstNumber, operatorInput, secondNumber);
 
 			console.log(`Hasilnya adalah: ${result}`);
